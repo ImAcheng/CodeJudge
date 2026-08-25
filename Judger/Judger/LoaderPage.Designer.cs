@@ -33,6 +33,7 @@
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             label1.Font = new Font("Microsoft JhengHei UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 136);
             label1.Location = new Point(0, 200);
             label1.Name = "label1";
@@ -56,6 +57,7 @@
             // 
             // label2
             // 
+            label2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             label2.Font = new Font("Microsoft JhengHei UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 136);
             label2.Location = new Point(0, 250);
             label2.Name = "label2";
@@ -96,7 +98,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Font = new Font("Microsoft JhengHei UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "LoaderPage";
             Size = new Size(850, 550);
             panel1.ResumeLayout(false);

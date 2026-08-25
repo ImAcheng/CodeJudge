@@ -7,5 +7,14 @@
     <Compile Update="LoaderPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="MainPage\DataFailedDisplayer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ProblemDisplayer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ProblemsPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

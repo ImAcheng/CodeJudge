@@ -1,42 +1,21 @@
-﻿namespace Judger {
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Judger {
     public class ProblemSet {
         public string ExamName { get; set; } = "Test";
-        public Int64 ExamTime { get; set; } = 30 * 60 * 60;     // Unit: seconds
-        public List<ProblemDetail> Problems { get; set; }
+        public Int64 ExamTime { get; set; } = 30 * 60;     // Unit: seconds
+        public List<ProblemDetail> Problems { get; set; } = new List<ProblemDetail>();
     }
 
     public class ProblemDetail {
-        public string? ProblemTitle { get; set; }
-        public string? ProblemContent { get; set; }
+        public string ProblemTitle { get; set; } = "(沒有標題)";
+        public string ProblemContent { get; set; } = "(沒有內容)";
         public List<InputOutputSet>? ExampleIO { get; set; }
         public List<InputOutputSet>? FormalIO { get; set; }
-
-        public ProblemDetail() {
-            if (string.IsNullOrWhiteSpace(ProblemTitle)) {
-                throw new ProblemTitleIsEmpty();
-            }
-
-            if (string.IsNullOrWhiteSpace(ProblemContent)) {
-                throw new ProblemContentIsEmpty();
-            }
-
-            if (ExampleIO == null || ExampleIO?.Count == 0) {
-                throw new ExampleIOIsEmpty();
-            }
-
-            if (FormalIO == null || FormalIO?.Count == 0) {
-                throw new FormalIOIsEmpty();
-            }
-        }
     }
 
     public class InputOutputSet {
         public string? Input { get; set; }
         public string? Output { get; set; }
     }
-
-    public class ProblemTitleIsEmpty : Exception { }
-    public class ProblemContentIsEmpty : Exception { }
-    public class ExampleIOIsEmpty : Exception { }
-    public class FormalIOIsEmpty : Exception { }
 }

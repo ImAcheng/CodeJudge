@@ -1,0 +1,55 @@
+examName: "程式設計測驗"
+examTime: 1800
+
+problems:
+  - problemTitle: "兩數相加"
+    problemContent: "給定兩個整數，請輸出兩數的總和。"
+    exampleIO:
+      - input: "1 2"
+        output: "3"
+      - input: "10 20"
+        output: "30"
+    formalIO:
+      - input: "5 7"
+        output: "12"
+      - input: "20 30"
+        output: "50"
+
+  - problemTitle: "判斷奇偶數"
+    problemContent: "給定一個整數，請判斷該數為奇數或偶數。"
+    exampleIO:
+      - input: "4"
+        output: "Even"
+      - input: "7"
+        output: "Odd"
+    formalIO:
+      - input: "12"
+        output: "Even"
+      - input: "25"
+        output: "Odd"
+
+  - problemTitle: "計算階乘"
+    problemContent: "給定一個非負整數 N，請計算 N 的階乘。"
+    exampleIO:
+      - input: "5"
+        output: "120"
+      - input: "0"
+        output: "1"
+    formalIO:
+      - input: "6"
+        output: "720"
+      - input: "10"
+        output: "3628800"
+
+  - problemTitle: "找出最大值"
+    problemContent: "給定三個整數，請輸出三個數中的最大值。"
+    exampleIO:
+      - input: "1 5 3"
+        output: "5"
+      - input: "10 2 8"
+        output: "10"
+    formalIO:
+      - input: "7 9 4"
+        output: "9"
+      - input: "-5 -2 -10"
+        output: "-2"

@@ -67,9 +67,10 @@
             Controls.Add(panel1);
             Font = new Font("Microsoft JhengHei UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(4);
-            MinimumSize = new Size(850, 600);
+            MinimumSize = new Size(866, 639);
             Name = "FormMain";
             Text = "Code Judge - Judger";
+            Load += FormMain_Load;
             panel1.ResumeLayout(false);
             ResumeLayout(false);
         }
