@@ -1,10 +1,10 @@
-# Code Judge
+# Local Judge
 An open source, adjustable code judger for programming practice courses.
 
-## The Story of Code Judge
+## The Story of Local Judge
 I started this project in early 2026, I had no idea what should I call this.  
 The main judger platform in Taiwan, Zero Judge, gave me some ideas.  
-I named this project Code Judge after that.
+I named this project Local Judge after that.
 
 ## Frameworks
 * UI - Windows Form Apps (.NET 10)
